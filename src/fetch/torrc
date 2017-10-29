@@ -1,0 +1,4 @@
+SocksPort 9150 # what port to open for local application connections
+SocksBindAddress 127.0.0.1
+UseBridges 1
+
