@@ -40,4 +40,8 @@ if __name__ == "__main__":
     control = ControlProxyDelivery("admin","d0nth4ckm3")
     print control.info()
     print control.list()
-    print control.push('a27b2406-3b5b-4ba5-9863-27507a8ad7a3', "woo. we did it")
+    message = open('./secret').read()
+    print control.add(message)
+    for i in control.list():
+        if i['value'] == message:
+            control.push(i['uuid'],"known_value")
