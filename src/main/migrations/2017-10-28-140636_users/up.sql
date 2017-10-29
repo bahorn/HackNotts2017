@@ -1,0 +1,4 @@
+CREATE TABLE users (
+    username VARCHAR(64) NOT NULL PRIMARY KEY,
+    phash TEXT NOT NULL
+);
