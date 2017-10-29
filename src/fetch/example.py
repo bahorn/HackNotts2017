@@ -13,6 +13,7 @@ if __name__ == "__main__":
     try:
         key = os.environ['API_KEY']
         l = NessieApi(key)
-        print l.customers()
+        for i in l.customers():
+            print i['first_name'],i['last_name'],'-',i['_id']
     except KeyError:
         print('provide a ENV variable called API_KEY, with an API_KEY')
