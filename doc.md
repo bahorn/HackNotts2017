@@ -1,5 +1,5 @@
 # Author
-B. Horn <b@horn.uk>
+B. Horn <b <AT> horn <DOT> uk>
 
 # DomainFrontingThing
 * main backend is written in Rust,with Rocket+Diesel+Postgres
